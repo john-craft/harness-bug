@@ -1,0 +1,13 @@
+serviceDependencies:
+  - identifier: DIND
+    name: DIND
+    type: Service
+    spec:
+      connectorRef: account.JfrogCloudArtifactoryDocker
+      image: artifactorycloud.ual.com/v-docker/docker/docker:dind
+      privileged: true
+      resources:
+        limits:
+          memory: 2Gi
+          cpu: 2000m
+ 
